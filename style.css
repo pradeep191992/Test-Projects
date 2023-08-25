@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background: #5f5f5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  sans-serif;
+
+}
+
+/* .parent{
+    width: 95%;
+    height: auto;
+    background: #ececec;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.left{
+    width: auto;
+    height: inherit;
+    display: flex;
+    position: relative;
+}
+.right{
+    width: auto;
+    height: inherit;
+    display: flex;
+    padding: 1rem 0;
+    padding-right: 1rem;
+    align-items: center;
+    justify-content: end;
+    color: #5f5f5f;
+}
+.icon{
+    height: 75%;
+    width: 5rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.icon i{
+    font-size: 2.5rem;
+  
+}
+.leftmain{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 200%;
+
+}
+.companyname{
+    font-size: 1.2rem;
+    color: #616161;
+}   
+.content1{
+
+    font-size:1.6rem ;}
+.content2{
+
+    font-size: 1.2rem;
+    color: #616161;
+}
+.content1 span{
+    color: #616161;
+
+}
+.content1 i{
+    font-size: 1.3rem;
+    display: none;
+}
+
+
+.date{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.status{
+    font-size:1.2rem ;
+    margin-right: 1rem;
+    width: 8rem;
+    text-align: center;
+    color: blue;
+
+}
+.statusicon{
+    width: 8rem;
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+
+}
+
+.status0{
+    width: 23%;
+    background: blue;
+}
+.status1{
+    width: 23%;
+    height: inherit;
+    background: rgb(197, 197, 197);
+}
+.righttext{
+
+    display: flex;
+    font-size: 1.1rem;
+}
+.righticon{
+    font-size: 1.5rem;
+    color: black;
+ 
+}
+.righticon :nth-child(1){
+    margin-right: .3rem;
+}
+.mobilerighticon{
+    display: none;
+    font-size: 2rem;
+}
+@media screen and (max-width: 850px){
+    .content1{
+
+        font-size: 1.3rem;
+    }
+
+}
+@media screen and (max-width: 950px){
+  
+
+.right{
+font-size: 1.1rem;
+
+}
+    }
+
+
+@media screen and (max-width: 704px){
+    .content1{
+        font-size: 1.2rem;
+    }
+    .companyname,.content2,.date,.status{
+        font-size: 1.1rem;
+
+    }
+
+    
+    }
+
+@media screen and (max-width: 1140px){
+.righttext{
+    flex-direction: column;
+
+
+}
+.date{
+    margin-bottom:1rem;
+}
+
+
+}
+@media screen and (max-width: 660px){
+   .parent{
+
+    flex-direction: column;
+   } 
+   .left{
+    width: 100%;
+    height: inherit;
+    display: flex;
+}
+.righticon{
+    display: none;
+}
+.right{
+    padding-left:.5rem ;
+    padding-right: .5rem;
+    margin-top: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    .righttext{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mobilerighticon{
+        display: inline-block;
+        font-size: 2rem;
+        position: absolute;
+        top:.5rem;
+        right: .5rem;
+        bottom: 0rem;
+        font-size: 1.5rem;
+
+
+    }
+    .icon{
+        display: none;
+    }
+    .content2 {
+        margin-left: 2rem;
+    }
+    .content1 {
+        font-size: 2.5vmax;
+    }
+    .content1 i{
+        font-size: 3vmax;
+        display: inline-block;
+    }
+    .leftmain{
+        padding-left: .2rem;
+    }
+   .status{
+    margin-right: 0;
+   }
+   .leftmain{
+    padding-left: .5rem;
+   }
+
+    
+}
+@media screen and (max-width: 450px){
+    .content1{
+        font-size: 1.2rem;
+    }
+    .companyname,.content2,.date,.status{
+        font-size: 1rem;
+
+    }
+
+} */
+
+.status{
+    font-size:1.2rem ;
+    margin-right: 1rem;
+    width: 8rem;
+    text-align: center;
+    color: blue;
+
+}
+.statusicon{
+    width: 8rem;
+    height: .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.status0{
+    width: 23%;
+    background: blue;
+}
+.status1{
+    width: 23%;
+    height: inherit;
+    background: rgb(197, 197, 197);
+}
+
+
+
+
+
+
+.wrapper{
+    width: 95%;
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    font-size: 16px;
+    gap: 4px;
+}
+.icon{
+    width: 60px;
+    order: 1;
+    position: relative;
+}
+.icon .fa-solid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.5rem;
+}
+.company-name{
+    width: calc(100% - 280px);
+    order: 2;
+}
+.well{
+    width: calc(100% - 280px);
+    order: 3;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.service{
+    width: calc(100% - 280px);
+    order: 6;
+    margin-left: 60px;
+}
+.date-status{
+    order: 4;
+    width: 150px;
+    position: relative;
+}
+.absolute-div{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.righticon{
+    order: 5;
+    width: 60px;
+}
+
+
+/* @media screen and (max-width: 1023px){
+    .absolute-div{
+        display: flex;
+        top: 0;
+        flex-direction: row;
+    }
+} */
+
+@media screen and (max-width: 767px){
+    .wrapper{
+        font-size: 16px;
+        gap: 4px;
+    }
+    .icon{
+        width: 40px;
+        order: 3;
+    }
+    .icon .fa-solid{
+        font-size: 1.5rem;
+        top: 10px;
+    }
+    .company-name{
+        width: calc(100% - 70px);
+        order: 1;
+    }
+    .well{
+        width: calc(100% - 100px);
+        order: 4;
+        margin-left: 0;
+    }
+    .service{
+        width: calc(100% - 100px);
+        order: 5;
+        margin-left: 40px;
+    }
+    .date-status{
+        order: 6;
+        width: 100%;
+        position: relative;
+    }
+    .absolute-div{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        align-items: end;
+    }
+
+    .righticon{
+        order: 2;
+        width: 60px;
+    }
+
+
+} 
